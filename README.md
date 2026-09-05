@@ -1,8 +1,8 @@
-\# RecoverAI
+**# RecoverAI**
 
 
 
-\## AI-Powered Revenue Recovery Agent
+**## AI-Powered Revenue Recovery Agent**
 
 
 
@@ -14,27 +14,11 @@ RecoverAI is an AI-assisted revenue recovery system designed to identify failed 
 
 
 
-\*\*Flow:\*\*
+RecoverAI addresses the problem of revenue lost through failed payments.
 
 
 
-Detect → Diagnose → Decide → Recover → Verify
-
-
-
-\---
-
-
-
-\## Problem
-
-
-
-Failed payments create revenue at risk for merchants. Not every         failed payment should be retried automatically.
-
-
-
-RecoverAI answers:
+The system answers:
 
 
 
@@ -54,13 +38,27 @@ RecoverAI answers:
 
 
 
-\## Solution
+**## Flow**
+
+
+
+\*\*Detect → Diagnose → Decide → Recover → Verify\*\*
+
+
+
+\---
+
+
+
+**## Solution**
 
 
 
 RecoverAI combines:
 
 
+
+\- Synthetic failed-payment transaction data
 
 \- Machine Learning recovery-probability prediction
 
@@ -72,8 +70,6 @@ RecoverAI combines:
 
 \- Customer intervention for appropriate failures
 
-\- Retry limits and stopping rules
-
 \- Recovery outcome simulation
 
 \- Audit logging
@@ -82,7 +78,7 @@ RecoverAI combines:
 
 
 
-The AI decision layer is constrained to three actions:
+The decision layer is constrained to three actions:
 
 
 
@@ -90,7 +86,7 @@ The AI decision layer is constrained to three actions:
 
 
 
-The system never performs real payment transactions in this demo.
+The system does not process real payments in this demonstration.
 
 
 
@@ -98,7 +94,7 @@ The system never performs real payment transactions in this demo.
 
 
 
-\## Architecture
+**## Architecture**
 
 
 
@@ -116,29 +112,29 @@ Synthetic Transaction Data
 
 &#x20;         ↓
 
-&#x20;Failure Diagnosis
-
-&#x20;         ↓
-
 &#x20;AI Decision Agent
 
 &#x20;         ↓
 
-&#x20;┌────────┼────────┐
+&#x20;┌────────┼─────────┐
 
-&#x20;↓        ↓        ↓
+&#x20;↓        ↓         ↓
 
-RETRY   MESSAGE   STOP
+RETRY   MESSAGE    STOP
 
 &#x20;↓        ↓
 
-Outcome Simulation
+Recovery Outcome Simulator
 
 &#x20;         ↓
 
-Revenue Recovered
+&#x20;Revenue Recovered
 
 &#x20;         ↓
 
-&#x20;    Audit Log
+&#x20;    Audit Trail
+
+&#x20;         ↓
+
+&#x20;  Dashboard / Metrics
 
